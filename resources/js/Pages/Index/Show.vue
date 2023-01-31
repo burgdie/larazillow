@@ -1,12 +1,16 @@
 <template>
-  <MainLayout>
-    <div> <h2> Show</h2></div>
+  <div> <h2> Show</h2></div>
   <Link href="/">Main Page</Link>
-  </MainLayout>
-
 </template>
 
 <script setup>
-import { Link } from '@inertiajs/inertia-vue3';
-import MainLayout from '../../Layouts/MainLayout.vue'
+  import { Link } from '@inertiajs/inertia-vue3';
 </script>
+
+<script>
+import MainLayout from '../../Layouts/MainLayout.vue'
+export default {
+  layout: MainLayout
+}
+</script>
+
